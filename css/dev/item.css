@@ -231,6 +231,29 @@
   height: 100%;
   object-fit: cover;
 }
+.item-pros {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+}
+.item-pros__card {
+  background-color: #fff;
+  border-radius: 1.25rem;
+  padding: 1.5rem;
+}
+.item-pros__icon {
+  background-color: #f1f2f4;
+  border-radius: 0.75rem;
+  width: 3.75rem;
+  height: 3.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.item-pros__title {
+  line-height: 1.35;
+  font-weight: 700;
+}
 @media (max-width: 89.375em) {
   .item__main {
     grid-template-columns: auto 1fr;
@@ -273,6 +296,11 @@
     aspect-ratio: 585/440;
   }
 }
+@media (max-width: 68.75em) {
+  .item-pros {
+    grid-template-columns: 1fr 1fr;
+  }
+}
 @media (max-width: 60.625em) {
   .item__right {
     display: contents;
@@ -310,6 +338,11 @@
   }
   .item__price-wrapper {
     grid-column: 1/2;
+  }
+}
+@media (max-width: 33.125em) {
+  .item-pros {
+    grid-template-columns: 1fr;
   }
 }
 @media (max-width: 28.75em) {
@@ -390,6 +423,18 @@
   .description__text p {
     font-size: 0.875rem;
   }
+  .item-pros {
+    padding-top: 1.25rem;
+  }
+  .item-pros {
+    padding-bottom: 1.25rem;
+  }
+  .item-pros__title {
+    margin-top: 0.875rem;
+  }
+  .item-pros__title {
+    font-size: 1.125rem;
+  }
 }
 @media (min-width: 20em) and (max-width: 89.375em) {
   .item__slider-thumb {
@@ -456,6 +501,18 @@
   }
   .description__text p {
     font-size: clamp( 0.875rem , 0.820725915875rem  +  0.2713704206vw , 1.125rem );
+  }
+  .item-pros {
+    padding-top: clamp( 1.25rem , 0.70725915875rem  +  2.7137042062vw , 3.75rem );
+  }
+  .item-pros {
+    padding-bottom: clamp( 1.25rem , 0.70725915875rem  +  2.7137042062vw , 3.75rem );
+  }
+  .item-pros__title {
+    margin-top: clamp( 0.875rem , 0.7393147896875rem  +  0.6784260516vw , 1.5rem );
+  }
+  .item-pros__title {
+    font-size: clamp( 1.125rem , 1.0978629579375rem  +  0.1356852103vw , 1.25rem );
   }
 }
 @media (min-width: 89.4375em) {
@@ -526,6 +583,18 @@
   }
   .description__text p {
     font-size: 1.125rem;
+  }
+  .item-pros {
+    padding-top: 3.75rem;
+  }
+  .item-pros {
+    padding-bottom: 3.75rem;
+  }
+  .item-pros__title {
+    margin-top: 1.5rem;
+  }
+  .item-pros__title {
+    font-size: 1.25rem;
   }
 }
 @media (any-hover: hover) {
