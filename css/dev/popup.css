@@ -76,7 +76,7 @@ h6 {
 @font-face { 
 	font-family: "iconfont"; 
 	font-display: swap;
-	src: url("../assets/fonts/iconfont.woff2?b0fd1598f021709a7f0ad3983cae05e6") format("woff2"); 
+	src: url("../assets/fonts/iconfont.woff2?adaf4ef553e8fc5e93e8691f18c5462a") format("woff2"); 
 } 
 [class*="--icon-"]::before{
 	font-family: iconfont; 
@@ -90,31 +90,31 @@ h6 {
 	[class*="--icon-tg"]::before { 
 		content: "\f103"; 
 	} 
-	[class*="--icon-star"]::before { 
+	[class*="--icon-strShare"]::before { 
 		content: "\f104"; 
 	} 
-	[class*="--icon-shareStroke"]::before { 
+	[class*="--icon-strLike"]::before { 
 		content: "\f105"; 
 	} 
-	[class*="--icon-share"]::before { 
+	[class*="--icon-star"]::before { 
 		content: "\f106"; 
 	} 
-	[class*="--icon-search"]::before { 
+	[class*="--icon-share"]::before { 
 		content: "\f107"; 
 	} 
-	[class*="--icon-phone"]::before { 
+	[class*="--icon-search"]::before { 
 		content: "\f108"; 
 	} 
-	[class*="--icon-max"]::before { 
+	[class*="--icon-phone"]::before { 
 		content: "\f109"; 
 	} 
-	[class*="--icon-mail"]::before { 
+	[class*="--icon-max"]::before { 
 		content: "\f10a"; 
 	} 
-	[class*="--icon-location"]::before { 
+	[class*="--icon-mail"]::before { 
 		content: "\f10b"; 
 	} 
-	[class*="--icon-likeStroke"]::before { 
+	[class*="--icon-location"]::before { 
 		content: "\f10c"; 
 	} 
 	[class*="--icon-like"]::before { 
@@ -1169,6 +1169,9 @@ body::after {
 @media (max-width: 25em) {
   .footer__nav-lists {
     gap: 1.25rem;
+  }
+  .button {
+    padding: 1.5rem 2.3125rem;
   }
 }
 @media (max-width: 23.75em) {

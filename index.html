@@ -10,10 +10,10 @@
 		<link rel="preload" href="./assets/fonts/Lato-Semibold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 		<link rel="shortcut icon" href="assets/img/favicon.ico">
 		<title>Главная</title>
-		<script type="module" crossorigin="" src="./js/index.min.js?v=1779038834662"></script>
+		<script type="module" crossorigin="" src="./js/index.min.js?v=1779182113015"></script>
 		<link rel="modulepreload" crossorigin="" href="./js/popup.min.js">
-		<link rel="stylesheet" crossorigin="" href="./css/popup.min.css?v=1779038834662">
-		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1779038834662">
+		<link rel="stylesheet" crossorigin="" href="./css/popup.min.css?v=1779182113015">
+		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1779182113015">
 	</head>
 	<body>
 		<div class="wrapper">
@@ -108,9 +108,54 @@
 					<section class="hero">
 						<div class="hero__top">
 							<div class="hero__main">
-								<p class="hero__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-								<a href="#" data-fls-button="" class="hero__btn button" data-fls-popup-link="order">Перейти к покупкам</a>
+								<div data-fls-slider="" class="hero__main-slider">
+									<div class="hero__swiper">
+										<div class="hero__main-slide">
+											<picture>
+												<source media="(max-width: 600px)" srcset="./assets/img/heroBg-600.webp" type="image/webp">
+												<source media="(max-width: 1200px)" srcset="./assets/img/heroBg-1200.webp" type="image/webp">
+												<img alt="background" src="./assets/img/heroBg.webp">
+											</picture>
+											<div class="hero__main-content">
+												<p class="hero__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+												<a href="#" data-fls-button="" class="hero__btn button" data-fls-popup-link="order">Перейти к
+										покупкам</a>
+											</div>
+										</div>
+										<div class="hero__main-slide">
+											<picture>
+												<source media="(max-width: 600px)" srcset="./assets/img/heroBg-600.webp" type="image/webp">
+												<source media="(max-width: 1200px)" srcset="./assets/img/heroBg-1200.webp" type="image/webp">
+												<img alt="background" src="./assets/img/heroBg.webp">
+											</picture>
+											<div class="hero__main-content">
+												<p class="hero__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+												<a href="#" data-fls-button="" class="hero__btn button" data-fls-popup-link="order">Перейти к
+										покупкам</a>
+											</div>
+										</div>
+										<div class="hero__main-slide">
+											<picture>
+												<source media="(max-width: 600px)" srcset="./assets/img/heroBg-600.webp" type="image/webp">
+												<source media="(max-width: 1200px)" srcset="./assets/img/heroBg-1200.webp" type="image/webp">
+												<img alt="background" src="./assets/img/heroBg.webp">
+											</picture>
+											<div class="hero__main-content">
+												<p class="hero__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+												<a href="#" data-fls-button="" class="hero__btn button" data-fls-popup-link="order">Перейти к
+										покупкам</a>
+											</div>
+										</div>
+									</div>
+									<div data-fls-pagination="" class="pagination hero__main-pagination"></div>
+									<div class="hero__main-buttons-wrapper">
+										<button data-fls-button="" class="arrow-button arrow-button--prev hero__main-btn-prev --icon-arrow"></button>
+										<button data-fls-button="" class="arrow-button hero__main-btn-next --icon-arrow"></button>
+									</div>
+								</div>
 							</div>
 							<div class="hero__slider-wrapper">
 								<div data-fls-slider="" class="hero__slider">

@@ -9,12 +9,12 @@
 		<link rel="preload" href="./assets/fonts/Manrope-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 		<link rel="preload" href="./assets/fonts/Lato-Semibold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 		<link rel="shortcut icon" href="assets/img/favicon.ico">
-		<title>Каталог</title>
-		<script type="module" crossorigin="" src="./js/catalog.min.js?v=1779182113014"></script>
+		<title>Страница товара</title>
+		<script type="module" crossorigin="" src="./js/item.min.js?v=1779182113013"></script>
 		<link rel="modulepreload" crossorigin="" href="./js/popup.min.js">
-		<link rel="stylesheet" crossorigin="" href="./css/popup.min.css?v=1779182113014">
-		<link rel="stylesheet" crossorigin="" href="./css/catalog.min.css?v=1779182113014">
-		<link rel="stylesheet" crossorigin="" href="./css/breadcrumbs.min.css?v=1779182113014">
+		<link rel="stylesheet" crossorigin="" href="./css/popup.min.css?v=1779182113013">
+		<link rel="stylesheet" crossorigin="" href="./css/item.min.css?v=1779182113013">
+		<link rel="stylesheet" crossorigin="" href="./css/breadcrumbs.min.css?v=1779182113013">
 	</head>
 	<body>
 		<div class="wrapper">
@@ -105,229 +105,181 @@
 				</div>
 			</header>
 			<main class="page">
-				<section class="catalog-hero">
-					<div class="catalog-hero__container">
-						<div data-fls-breadcrumbs="" class="breadcrumbs">
-							<ul>
-								<li>
-									<a href="#">Главная</a>
-								</li>
-								<li>
-									<span>Икра</span>
-								</li>
-							</ul>
-						</div>
-						<p class="catalog-hero__title">Название категории</p>
-					</div>
-				</section>
 				<div class="page__container">
-					<section class="catalog">
-						<div class="catalog__top">
-							<div data-fls-radio="" class="catalog-radio">
-								<label class="catalog-radio__item">
-									<input class="catalog-radio__input" checked type="radio" value="1" name="option">
-									<span class="catalog-radio__text">Все</span>
-								</label>
-								<label class="catalog-radio__item">
-									<input class="catalog-radio__input" type="radio" value="2" name="option">
-									<span class="catalog-radio__text">Кета</span>
-								</label>
-								<label class="catalog-radio__item">
-									<input class="catalog-radio__input" type="radio" value="2" name="option">
-									<span class="catalog-radio__text">Горбуша</span>
-								</label>
-								<label class="catalog-radio__item">
-									<input class="catalog-radio__input" type="radio" value="2" name="option">
-									<span class="catalog-radio__text">Нерка</span>
-								</label>
-								<label class="catalog-radio__item">
-									<input class="catalog-radio__input" type="radio" value="2" name="option">
-									<span class="catalog-radio__text">Кижуч</span>
-								</label>
-							</div>
-							<select name="form[]" data-fls-select="" data-fls-select-show-selected="" data-fls-select-modif="catalog">
-								<option value="" selected>Сортировка</option>
-								<option value="1">По возрастанию</option>
-								<option value="2">Пункт №2</option>
-								<option value="3">Пункт №3</option>
-							</select>
+					<div data-fls-breadcrumbs="" class="breadcrumbs">
+						<ul>
+							<li>
+								<a href="index.html">Главная</a>
+							</li>
+							<li>
+								<a href="#">Икра</a>
+							</li>
+							<li>
+								<a href="#">Икра</a>
+							</li>
+							<li>
+								<span>Икра Горбуши свежий улов 350 гр. стекло</span>
+							</li>
+						</ul>
+					</div>
+					<section class="item">
+						<p class="item__title">Икра Горбуши свежий улов 350 гр. стекло</p>
+						<div class="item__interact">
+							<button class="--icon-strLike --active">В избранное</button>
+							<button class="--icon-strShare">В избранное</button>
 						</div>
-						<div class="catalog__main">
-							<div data-fls-slidecard="" class="slide-card">
-								<div class="slide-card__img-block">
-									<p class="slide-card__sale">-20%</p>
-									<picture>
-										<img alt="Икра Горбуши свежий улов 350 гр. стекло" src="./assets/img/item.webp">
-									</picture>
+						<div class="item__main">
+							<div class="item__sliders">
+								<div class="item__thumbs-slider">
+									<button data-fls-button="" type="button" class="item__slide-button-prev item__slide-btn arrow-button arrow-button--prev --icon-arrow"></button>
+									<div data-fls-slider="" class="item__slider-thumb">
+										<div class="item__swiper">
+											<div class="item__slide-thumb">
+												<picture>
+													<img alt="placeholder" src="./assets/img/item.webp">
+												</picture>
+											</div>
+											<div class="item__slide-thumb">
+												<picture>
+													<img alt="placeholder" src="./assets/img/item.webp">
+												</picture>
+											</div>
+											<div class="item__slide-thumb">
+												<picture>
+													<img alt="placeholder" src="./assets/img/item.webp">
+												</picture>
+											</div>
+											<div class="item__slide-thumb">
+												<picture>
+													<img alt="placeholder" src="./assets/img/item.webp">
+												</picture>
+											</div>
+											<div class="item__slide-thumb">
+												<picture>
+													<img alt="placeholder" src="./assets/img/item.webp">
+												</picture>
+											</div>
+										</div>
+									</div>
+									<button data-fls-button="" type="button" class="item__slide-button-next item__slide-btn arrow-button --icon-arrow"></button>
 								</div>
-								<a href="#" class="slide-card__title">Икра Горбуши свежий улов 350 гр. стекло</a>
-								<div class="slide-card__bottom">
-									<p class="slide-card__price">3 180 Р</p>
-									<a href="#" data-fls-button="" class="slide-card__button button-small">Подробнее</a>
-									<a href="#" class="slide-card__cart --icon-cart"></a>
-								</div>
-							</div>
-							<div data-fls-slidecard="" class="slide-card">
-								<div class="slide-card__img-block">
-									<p class="slide-card__sale">-20%</p>
-									<picture>
-										<img alt="Икра Горбуши свежий улов 350 гр. стекло" src="./assets/img/item.webp">
-									</picture>
-								</div>
-								<a href="#" class="slide-card__title">Икра Горбуши свежий улов 350 гр. стекло</a>
-								<div class="slide-card__bottom">
-									<p class="slide-card__price">3 180 Р</p>
-									<a href="#" data-fls-button="" class="slide-card__button button-small">Подробнее</a>
-									<a href="#" class="slide-card__cart --icon-cart"></a>
-								</div>
-							</div>
-							<div data-fls-slidecard="" class="slide-card">
-								<div class="slide-card__img-block">
-									<p class="slide-card__sale">-20%</p>
-									<picture>
-										<img alt="Икра Горбуши свежий улов 350 гр. стекло" src="./assets/img/item.webp">
-									</picture>
-								</div>
-								<a href="#" class="slide-card__title">Икра Горбуши свежий улов 350 гр. стекло</a>
-								<div class="slide-card__bottom">
-									<p class="slide-card__price">3 180 Р</p>
-									<a href="#" data-fls-button="" class="slide-card__button button-small">Подробнее</a>
-									<a href="#" class="slide-card__cart --icon-cart"></a>
-								</div>
-							</div>
-							<div data-fls-slidecard="" class="slide-card">
-								<div class="slide-card__img-block">
-									<p class="slide-card__sale">-20%</p>
-									<picture>
-										<img alt="Икра Горбуши свежий улов 350 гр. стекло" src="./assets/img/item.webp">
-									</picture>
-								</div>
-								<a href="#" class="slide-card__title">Икра Горбуши свежий улов 350 гр. стекло</a>
-								<div class="slide-card__bottom">
-									<p class="slide-card__price">3 180 Р</p>
-									<a href="#" data-fls-button="" class="slide-card__button button-small">Подробнее</a>
-									<a href="#" class="slide-card__cart --icon-cart"></a>
-								</div>
-							</div>
-							<div data-fls-slidecard="" class="slide-card">
-								<div class="slide-card__img-block">
-									<p class="slide-card__sale">-20%</p>
-									<picture>
-										<img alt="Икра Горбуши свежий улов 350 гр. стекло" src="./assets/img/item.webp">
-									</picture>
-								</div>
-								<a href="#" class="slide-card__title">Икра Горбуши свежий улов 350 гр. стекло</a>
-								<div class="slide-card__bottom">
-									<p class="slide-card__price">3 180 Р</p>
-									<a href="#" data-fls-button="" class="slide-card__button button-small">Подробнее</a>
-									<a href="#" class="slide-card__cart --icon-cart"></a>
+								<div class="item__main-slider">
+									<div data-fls-slider="" class="item__slider">
+										<div class="item__swiper">
+											<div class="item__slide">
+												<picture>
+													<img alt="placeholder" src="./assets/img/item.webp">
+												</picture>
+											</div>
+											<div class="item__slide">
+												<picture>
+													<img alt="placeholder" src="./assets/img/item.webp">
+												</picture>
+											</div>
+											<div class="item__slide">
+												<picture>
+													<img alt="placeholder" src="./assets/img/item.webp">
+												</picture>
+											</div>
+											<div class="item__slide">
+												<picture>
+													<img alt="placeholder" src="./assets/img/item.webp">
+												</picture>
+											</div>
+											<div class="item__slide">
+												<picture>
+													<img alt="placeholder" src="./assets/img/item.webp">
+												</picture>
+											</div>
+										</div>
+									</div>
 								</div>
 							</div>
-							<div data-fls-slidecard="" class="slide-card">
-								<div class="slide-card__img-block">
-									<p class="slide-card__sale">-20%</p>
-									<picture>
-										<img alt="Икра Горбуши свежий улов 350 гр. стекло" src="./assets/img/item.webp">
-									</picture>
+							<div class="item__right">
+								<div class="item__info">
+									<table>
+										<tr>
+											<td>Бренд</td>
+											<td>Название бренда или название компании</td>
+										</tr>
+										<tr>
+											<td>Категория</td>
+											<td>Икра</td>
+										</tr>
+										<tr>
+											<td>Масса нетто, кг</td>
+											<td>0,35</td>
+										</tr>
+										<tr>
+											<td>Артикул</td>
+											<td>0,35</td>
+										</tr>
+									</table>
+									<a href="#" data-fls-scrollto=".description" class="item__go-to-btn --icon-arrow">Перейти к описанию</a>
 								</div>
-								<a href="#" class="slide-card__title">Икра Горбуши свежий улов 350 гр. стекло</a>
-								<div class="slide-card__bottom">
-									<p class="slide-card__price">3 180 Р</p>
-									<a href="#" data-fls-button="" class="slide-card__button button-small">Подробнее</a>
-									<a href="#" class="slide-card__cart --icon-cart"></a>
-								</div>
-							</div>
-							<div data-fls-slidecard="" class="slide-card">
-								<div class="slide-card__img-block">
-									<p class="slide-card__sale">-20%</p>
-									<picture>
-										<img alt="Икра Горбуши свежий улов 350 гр. стекло" src="./assets/img/item.webp">
-									</picture>
-								</div>
-								<a href="#" class="slide-card__title">Икра Горбуши свежий улов 350 гр. стекло</a>
-								<div class="slide-card__bottom">
-									<p class="slide-card__price">3 180 Р</p>
-									<a href="#" data-fls-button="" class="slide-card__button button-small">Подробнее</a>
-									<a href="#" class="slide-card__cart --icon-cart"></a>
-								</div>
-							</div>
-							<div data-fls-slidecard="" class="slide-card">
-								<div class="slide-card__img-block">
-									<p class="slide-card__sale">-20%</p>
-									<picture>
-										<img alt="Икра Горбуши свежий улов 350 гр. стекло" src="./assets/img/item.webp">
-									</picture>
-								</div>
-								<a href="#" class="slide-card__title">Икра Горбуши свежий улов 350 гр. стекло</a>
-								<div class="slide-card__bottom">
-									<p class="slide-card__price">3 180 Р</p>
-									<a href="#" data-fls-button="" class="slide-card__button button-small">Подробнее</a>
-									<a href="#" class="slide-card__cart --icon-cart"></a>
-								</div>
-							</div>
-							<div data-fls-slidecard="" class="slide-card">
-								<div class="slide-card__img-block">
-									<p class="slide-card__sale">-20%</p>
-									<picture>
-										<img alt="Икра Горбуши свежий улов 350 гр. стекло" src="./assets/img/item.webp">
-									</picture>
-								</div>
-								<a href="#" class="slide-card__title">Икра Горбуши свежий улов 350 гр. стекло</a>
-								<div class="slide-card__bottom">
-									<p class="slide-card__price">3 180 Р</p>
-									<a href="#" data-fls-button="" class="slide-card__button button-small">Подробнее</a>
-									<a href="#" class="slide-card__cart --icon-cart"></a>
-								</div>
-							</div>
-							<div data-fls-slidecard="" class="slide-card">
-								<div class="slide-card__img-block">
-									<p class="slide-card__sale">-20%</p>
-									<picture>
-										<img alt="Икра Горбуши свежий улов 350 гр. стекло" src="./assets/img/item.webp">
-									</picture>
-								</div>
-								<a href="#" class="slide-card__title">Икра Горбуши свежий улов 350 гр. стекло</a>
-								<div class="slide-card__bottom">
-									<p class="slide-card__price">3 180 Р</p>
-									<a href="#" data-fls-button="" class="slide-card__button button-small">Подробнее</a>
-									<a href="#" class="slide-card__cart --icon-cart"></a>
-								</div>
-							</div>
-							<div data-fls-slidecard="" class="slide-card">
-								<div class="slide-card__img-block">
-									<p class="slide-card__sale">-20%</p>
-									<picture>
-										<img alt="Икра Горбуши свежий улов 350 гр. стекло" src="./assets/img/item.webp">
-									</picture>
-								</div>
-								<a href="#" class="slide-card__title">Икра Горбуши свежий улов 350 гр. стекло</a>
-								<div class="slide-card__bottom">
-									<p class="slide-card__price">3 180 Р</p>
-									<a href="#" data-fls-button="" class="slide-card__button button-small">Подробнее</a>
-									<a href="#" class="slide-card__cart --icon-cart"></a>
-								</div>
-							</div>
-							<div data-fls-slidecard="" class="slide-card">
-								<div class="slide-card__img-block">
-									<p class="slide-card__sale">-20%</p>
-									<picture>
-										<img alt="Икра Горбуши свежий улов 350 гр. стекло" src="./assets/img/item.webp">
-									</picture>
-								</div>
-								<a href="#" class="slide-card__title">Икра Горбуши свежий улов 350 гр. стекло</a>
-								<div class="slide-card__bottom">
-									<p class="slide-card__price">3 180 Р</p>
-									<a href="#" data-fls-button="" class="slide-card__button button-small">Подробнее</a>
-									<a href="#" class="slide-card__cart --icon-cart"></a>
+								<div class="item__price-wrapper">
+									<div class="item__price-block">
+										<p class="item__price">3 180 Р</p>
+										<div class="item__price-button-wrapper">
+											<div data-fls-quantity="" class="quantity">
+												<button data-fls-quantity-minus="" type="button" class="quantity__button quantity__button--minus">-</button>
+												<div class="quantity__input">
+													<input data-fls-quantity-value="" autocomplete="off" type="text" name="form[]" value="1">
+												</div>
+												<button data-fls-quantity-plus="" type="button" class="quantity__button quantity__button--plus">+</button>
+											</div>
+											<button data-fls-button="" class="item__btn button button--gold">В корзину</button>
+										</div>
+									</div>
+									<div class="item__price-block">
+										<div class="item__is-available">
+											<div class="--icon-check"></div>
+											<span>В наличии</span>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
 					</section>
 				</div>
-				<section class="slider slider--blue slider--80">
+				<div class="white-bg">
+					<div class="page__container">
+						<section class="description">
+							<div class="description__main">
+								<p class="title">Описание</p>
+								<div class="description__text">
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget pharetra massa. Nunc molestie
+							ligula a euismod
+							ornare. Nullam eu viverra enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
+							dignissim rutrum
+							facilisis. Phasellus in nibh non est mollis ornare. Cras at lorem sit amet eros posuere auctor. In
+							hac
+							habitasse platea
+							dictumst. Mauris sit amet massa sed nunc tempus egestas in eu lorem. Etiam venenatis suscipit lorem
+							a
+							suscipit. Aliquam
+							vel iaculis quam. Sed nec tellus eget nisi mollis vulputate sed vel neque. Nam mi metus, rutrum nec
+							consectetur sed,
+							scelerisque ut felis. Sed eget lorem at felis feugiat elementum. In tincidunt vel tellus nec
+							efficitur.
+									</p>
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, eligendi!</p>
+								</div>
+							</div>
+							<div class="description__img">
+								<picture>
+									<source media="(max-width: 600px)" srcset="./assets/img/imgDescription-600.webp" type="image/webp">
+									<img alt="Описание" src="./assets/img/imgDescription.webp">
+								</picture>
+							</div>
+						</section>
+					</div>
+				</div>
+				<section class="slider slider--blue">
 					<div class="slider__container">
 						<div class="slider__top-wrapper">
-							<p class="title">Вам это понравится</p>
+							<p class="title">Похожие товары</p>
 							<div class="slider__slider-buttons-wrapper">
 								<button data-fls-button="" type="button" class="arrow-button arrow-button--gold arrow-button--prev slider__slider-btn-prev --icon-arrow"></button>
 								<button data-fls-button="" type="button" class="arrow-button arrow-button--gold slider__slider-btn-next --icon-arrow"></button>
