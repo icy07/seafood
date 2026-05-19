@@ -98,7 +98,8 @@
   width: 6.25rem;
   cursor: pointer;
 }
-.item__slide-thumb img {
+.item__slide-thumb img,
+.item__slide-thumb picture {
   width: 100%;
   height: 100%;
   object-fit: contain;
