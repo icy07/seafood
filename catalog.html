@@ -10,11 +10,11 @@
 		<link rel="preload" href="./assets/fonts/Lato-Semibold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 		<link rel="shortcut icon" href="assets/img/favicon.ico">
 		<title>Каталог</title>
-		<script type="module" crossorigin="" src="./js/catalog.min.js?v=1779192588596"></script>
+		<script type="module" crossorigin="" src="./js/catalog.min.js?v=1779804450109"></script>
 		<link rel="modulepreload" crossorigin="" href="./js/popup.min.js">
-		<link rel="stylesheet" crossorigin="" href="./css/popup.min.css?v=1779192588596">
-		<link rel="stylesheet" crossorigin="" href="./css/catalog.min.css?v=1779192588596">
-		<link rel="stylesheet" crossorigin="" href="./css/breadcrumbs.min.css?v=1779192588596">
+		<link rel="stylesheet" crossorigin="" href="./css/popup.min.css?v=1779804450109">
+		<link rel="stylesheet" crossorigin="" href="./css/catalog.min.css?v=1779804450109">
+		<link rel="stylesheet" crossorigin="" href="./css/breadcrumbs.min.css?v=1779804450109">
 	</head>
 	<body>
 		<div class="wrapper">
@@ -98,8 +98,8 @@
 							<input data-fls-input="" autocomplete="off" type="text" name="form[]" data-error="" placeholder="" class="header__search-input">
 						</form>
 						<div class="header__user-wrapper">
-							<a href="#" class="header__user-button --icon-user"></a>
-							<a href="#" class="header__user-button --icon-cart"></a>
+							<a href="#" class="header__user-button --icon-user" data-fls-popup-link="panel-login"></a>
+							<a href="#" class="header__user-button --icon-cart" data-fls-popup-link="panel-cart"></a>
 						</div>
 					</div>
 				</div>
@@ -147,9 +147,11 @@
 							</div>
 							<select name="form[]" data-fls-select="" data-fls-select-show-selected="" data-fls-select-modif="catalog">
 								<option value="" selected>Сортировка</option>
-								<option value="1">По возрастанию</option>
-								<option value="2">Пункт №2</option>
-								<option value="3">Пункт №3</option>
+								<option value="1">Исходная сортировка</option>
+								<option value="2">По популярности</option>
+								<option value="3">По новизне</option>
+								<option value="4">По возрастанию цены</option>
+								<option value="5">По убыванию цены</option>
 							</select>
 						</div>
 						<div class="catalog__main">

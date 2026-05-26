@@ -10,10 +10,10 @@
 		<link rel="preload" href="./assets/fonts/Lato-Semibold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 		<link rel="shortcut icon" href="assets/img/favicon.ico">
 		<title>Главная</title>
-		<script type="module" crossorigin="" src="./js/index.min.js?v=1779192588596"></script>
+		<script type="module" crossorigin="" src="./js/index.min.js?v=1779804450109"></script>
 		<link rel="modulepreload" crossorigin="" href="./js/popup.min.js">
-		<link rel="stylesheet" crossorigin="" href="./css/popup.min.css?v=1779192588596">
-		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1779192588596">
+		<link rel="stylesheet" crossorigin="" href="./css/popup.min.css?v=1779804450109">
+		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1779804450109">
 	</head>
 	<body>
 		<div class="wrapper">
@@ -97,8 +97,8 @@
 							<input data-fls-input="" autocomplete="off" type="text" name="form[]" data-error="" placeholder="" class="header__search-input">
 						</form>
 						<div class="header__user-wrapper">
-							<a href="#" class="header__user-button --icon-user"></a>
-							<a href="#" class="header__user-button --icon-cart"></a>
+							<a href="#" class="header__user-button --icon-user" data-fls-popup-link="panel-login"></a>
+							<a href="#" class="header__user-button --icon-cart" data-fls-popup-link="panel-cart"></a>
 						</div>
 					</div>
 				</div>
@@ -550,292 +550,288 @@
 				</div>
 				<div class="page__container">
 					<section class="slider slider--60">
-						<div class="slider__container">
-							<div class="slider__top-wrapper">
-								<p class="title">Отзывы</p>
-								<div class="reviews-general">
-									<div class="reviews-general__block">
-										<p class="reviews-general__rating --icon-star">5</p>
-										<div class="reviews-general__logo">
-											<picture>
-												<img alt="yandex" src="./assets/img/yandexBig.webp">
-											</picture>
-										</div>
+						<div class="slider__top-wrapper">
+							<p class="title">Отзывы</p>
+							<div class="reviews-general">
+								<div class="reviews-general__block">
+									<p class="reviews-general__rating --icon-star">5</p>
+									<div class="reviews-general__logo">
+										<picture>
+											<img alt="yandex" src="./assets/img/yandexBig.webp">
+										</picture>
 									</div>
-									<div class="reviews-general__block">
-										<p class="reviews-general__rating --icon-star">5</p>
-										<div class="reviews-general__logo">
-											<picture>
-												<img alt="2gis" src="./assets/img/2gis.webp">
-											</picture>
-										</div>
+								</div>
+								<div class="reviews-general__block">
+									<p class="reviews-general__rating --icon-star">5</p>
+									<div class="reviews-general__logo">
+										<picture>
+											<img alt="2gis" src="./assets/img/2gis.webp">
+										</picture>
 									</div>
 								</div>
 							</div>
-							<div class="slider__main">
-								<div data-fls-slider="" class="slider__slider">
-									<div class="slider__swiper">
-										<div data-fls-review="" class="review-block">
-											<div class="review-block__top">
-												<div class="review-block__name-wrapper">
-													<div class="review-block__logo">
-														<picture>
-															<img alt="Yandex" src="./assets/img/yandex.webp">
-														</picture>
-													</div>
-													<div class="review-block__name-stars">
-														<p class="review-block__name">Дмитрий М.</p>
-														<div data-fls-rating="set" data-fls-rating-value="3.5" class="rating"></div>
-													</div>
+						</div>
+						<div class="slider__main">
+							<div data-fls-slider="" class="slider__slider">
+								<div class="slider__swiper">
+									<div data-fls-review="" class="review-block">
+										<div class="review-block__top">
+											<div class="review-block__name-wrapper">
+												<div class="review-block__logo">
+													<picture>
+														<img alt="Yandex" src="./assets/img/yandex.webp">
+													</picture>
 												</div>
-												<p class="review-block__date">20.08.2024</p>
+												<div class="review-block__name-stars">
+													<p class="review-block__name">Дмитрий М.</p>
+													<div data-fls-rating="set" data-fls-rating-value="3.5" class="rating"></div>
+												</div>
 											</div>
-											<div class="review-block__text">
-												<p>
-													Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget pharetra massa. Nunc
-										molestie ligula a
-										euismod
-										ornare. Nullam eu viverra enim.
-												</p>
-											</div>
-											<a href="#" class="review-block__btn --icon-arrow">Читать полностью</a>
+											<p class="review-block__date">20.08.2024</p>
 										</div>
-										<div data-fls-review="" class="review-block">
-											<div class="review-block__top">
-												<div class="review-block__name-wrapper">
-													<div class="review-block__logo">
-														<picture>
-															<img alt="Yandex" src="./assets/img/yandex.webp">
-														</picture>
-													</div>
-													<div class="review-block__name-stars">
-														<p class="review-block__name">Дмитрий М.</p>
-														<div data-fls-rating="set" data-fls-rating-value="3.5" class="rating"></div>
-													</div>
+										<div class="review-block__text">
+											<p>
+												Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget pharetra massa. Nunc
+									molestie ligula a
+									euismod
+									ornare. Nullam eu viverra enim.
+											</p>
+										</div>
+										<a href="#" class="review-block__btn --icon-arrow">Читать полностью</a>
+									</div>
+									<div data-fls-review="" class="review-block">
+										<div class="review-block__top">
+											<div class="review-block__name-wrapper">
+												<div class="review-block__logo">
+													<picture>
+														<img alt="Yandex" src="./assets/img/yandex.webp">
+													</picture>
 												</div>
-												<p class="review-block__date">20.08.2024</p>
+												<div class="review-block__name-stars">
+													<p class="review-block__name">Дмитрий М.</p>
+													<div data-fls-rating="set" data-fls-rating-value="3.5" class="rating"></div>
+												</div>
 											</div>
-											<div class="review-block__text">
-												<p>
-													Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget pharetra massa. Nunc molestie ligula a
+											<p class="review-block__date">20.08.2024</p>
+										</div>
+										<div class="review-block__text">
+											<p>
+												Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget pharetra massa. Nunc molestie ligula a
 			euismod
 			ornare. Nullam eu viverra enim.
-												</p>
-											</div>
-										</div>
-										<div data-fls-review="" class="review-block">
-											<div class="review-block__top">
-												<div class="review-block__name-wrapper">
-													<div class="review-block__logo">
-														<picture>
-															<img alt="Yandex" src="./assets/img/yandex.webp">
-														</picture>
-													</div>
-													<div class="review-block__name-stars">
-														<p class="review-block__name">Дмитрий М.</p>
-														<div data-fls-rating="set" data-fls-rating-value="3.5" class="rating"></div>
-													</div>
-												</div>
-												<p class="review-block__date">20.08.2024</p>
-											</div>
-											<div class="review-block__text">
-												<p>
-													Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget pharetra massa. Nunc molestie ligula a
-			euismod
-			ornare. Nullam eu viverra enim.
-												</p>
-											</div>
-										</div>
-										<div data-fls-review="" class="review-block">
-											<div class="review-block__top">
-												<div class="review-block__name-wrapper">
-													<div class="review-block__logo">
-														<picture>
-															<img alt="Yandex" src="./assets/img/yandex.webp">
-														</picture>
-													</div>
-													<div class="review-block__name-stars">
-														<p class="review-block__name">Дмитрий М.</p>
-														<div data-fls-rating="set" data-fls-rating-value="3.5" class="rating"></div>
-													</div>
-												</div>
-												<p class="review-block__date">20.08.2024</p>
-											</div>
-											<div class="review-block__text">
-												<p>
-													Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget pharetra massa. Nunc molestie ligula a
-			euismod
-			ornare. Nullam eu viverra enim.
-												</p>
-											</div>
-										</div>
-										<div data-fls-review="" class="review-block">
-											<div class="review-block__top">
-												<div class="review-block__name-wrapper">
-													<div class="review-block__logo">
-														<picture>
-															<img alt="Yandex" src="./assets/img/yandex.webp">
-														</picture>
-													</div>
-													<div class="review-block__name-stars">
-														<p class="review-block__name">Дмитрий М.</p>
-														<div data-fls-rating="set" data-fls-rating-value="3.5" class="rating"></div>
-													</div>
-												</div>
-												<p class="review-block__date">20.08.2024</p>
-											</div>
-											<div class="review-block__text">
-												<p>
-													Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget pharetra massa. Nunc molestie ligula a
-			euismod
-			ornare. Nullam eu viverra enim.
-												</p>
-											</div>
-										</div>
-										<div data-fls-review="" class="review-block">
-											<div class="review-block__top">
-												<div class="review-block__name-wrapper">
-													<div class="review-block__logo">
-														<picture>
-															<img alt="Yandex" src="./assets/img/yandex.webp">
-														</picture>
-													</div>
-													<div class="review-block__name-stars">
-														<p class="review-block__name">Дмитрий М.</p>
-														<div data-fls-rating="set" data-fls-rating-value="3.5" class="rating"></div>
-													</div>
-												</div>
-												<p class="review-block__date">20.08.2024</p>
-											</div>
-											<div class="review-block__text">
-												<p>
-													Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget pharetra massa. Nunc molestie ligula a
-			euismod
-			ornare. Nullam eu viverra enim.
-												</p>
-											</div>
+											</p>
 										</div>
 									</div>
-									<div data-fls-pagination="" class="pagination slider__pagination"></div>
-									<div class="slider__slider-buttons-wrapper">
-										<button data-fls-button="" type="button" class="arrow-button arrow-button--prev slider__slider-btn-prev --icon-arrow"></button>
-										<button data-fls-button="" type="button" class="arrow-button slider__slider-btn-next --icon-arrow"></button>
+									<div data-fls-review="" class="review-block">
+										<div class="review-block__top">
+											<div class="review-block__name-wrapper">
+												<div class="review-block__logo">
+													<picture>
+														<img alt="Yandex" src="./assets/img/yandex.webp">
+													</picture>
+												</div>
+												<div class="review-block__name-stars">
+													<p class="review-block__name">Дмитрий М.</p>
+													<div data-fls-rating="set" data-fls-rating-value="3.5" class="rating"></div>
+												</div>
+											</div>
+											<p class="review-block__date">20.08.2024</p>
+										</div>
+										<div class="review-block__text">
+											<p>
+												Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget pharetra massa. Nunc molestie ligula a
+			euismod
+			ornare. Nullam eu viverra enim.
+											</p>
+										</div>
 									</div>
+									<div data-fls-review="" class="review-block">
+										<div class="review-block__top">
+											<div class="review-block__name-wrapper">
+												<div class="review-block__logo">
+													<picture>
+														<img alt="Yandex" src="./assets/img/yandex.webp">
+													</picture>
+												</div>
+												<div class="review-block__name-stars">
+													<p class="review-block__name">Дмитрий М.</p>
+													<div data-fls-rating="set" data-fls-rating-value="3.5" class="rating"></div>
+												</div>
+											</div>
+											<p class="review-block__date">20.08.2024</p>
+										</div>
+										<div class="review-block__text">
+											<p>
+												Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget pharetra massa. Nunc molestie ligula a
+			euismod
+			ornare. Nullam eu viverra enim.
+											</p>
+										</div>
+									</div>
+									<div data-fls-review="" class="review-block">
+										<div class="review-block__top">
+											<div class="review-block__name-wrapper">
+												<div class="review-block__logo">
+													<picture>
+														<img alt="Yandex" src="./assets/img/yandex.webp">
+													</picture>
+												</div>
+												<div class="review-block__name-stars">
+													<p class="review-block__name">Дмитрий М.</p>
+													<div data-fls-rating="set" data-fls-rating-value="3.5" class="rating"></div>
+												</div>
+											</div>
+											<p class="review-block__date">20.08.2024</p>
+										</div>
+										<div class="review-block__text">
+											<p>
+												Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget pharetra massa. Nunc molestie ligula a
+			euismod
+			ornare. Nullam eu viverra enim.
+											</p>
+										</div>
+									</div>
+									<div data-fls-review="" class="review-block">
+										<div class="review-block__top">
+											<div class="review-block__name-wrapper">
+												<div class="review-block__logo">
+													<picture>
+														<img alt="Yandex" src="./assets/img/yandex.webp">
+													</picture>
+												</div>
+												<div class="review-block__name-stars">
+													<p class="review-block__name">Дмитрий М.</p>
+													<div data-fls-rating="set" data-fls-rating-value="3.5" class="rating"></div>
+												</div>
+											</div>
+											<p class="review-block__date">20.08.2024</p>
+										</div>
+										<div class="review-block__text">
+											<p>
+												Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget pharetra massa. Nunc molestie ligula a
+			euismod
+			ornare. Nullam eu viverra enim.
+											</p>
+										</div>
+									</div>
+								</div>
+								<div data-fls-pagination="" class="pagination slider__pagination"></div>
+								<div class="slider__slider-buttons-wrapper">
+									<button data-fls-button="" type="button" class="arrow-button arrow-button--prev slider__slider-btn-prev --icon-arrow"></button>
+									<button data-fls-button="" type="button" class="arrow-button slider__slider-btn-next --icon-arrow"></button>
 								</div>
 							</div>
 						</div>
 					</section>
 					<section class="slider slider--100">
-						<div class="slider__container">
-							<div class="slider__top-wrapper">
-								<p class="title">Новости и статьи</p>
-								<a href="#" class="button-small">Перейти к блогу</a>
-							</div>
-							<div class="slider__main">
-								<div data-fls-slider="" class="slider__slider">
-									<div class="slider__swiper">
-										<div data-fls-newsblock="" class="news-block">
-											<div class="news-block__img">
-												<picture>
-													<img alt="1" src="./assets/img/news/1.webp">
-												</picture>
-											</div>
-											<a href="#" class="news-block__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
-											<p class="news-block__text">
-												Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget pharetra massa.
-											</p>
-											<a href="#" class="news-block__btn button-small">Читать полностью</a>
+						<div class="slider__top-wrapper">
+							<p class="title">Новости и статьи</p>
+							<a href="#" class="button-small">Перейти к блогу</a>
+						</div>
+						<div class="slider__main">
+							<div data-fls-slider="" class="slider__slider">
+								<div class="slider__swiper">
+									<div data-fls-newsblock="" class="news-block">
+										<div class="news-block__img">
+											<picture>
+												<img alt="1" src="./assets/img/news/1.webp">
+											</picture>
 										</div>
-										<div data-fls-newsblock="" class="news-block">
-											<div class="news-block__img">
-												<picture>
-													<img alt="2" src="./assets/img/news/2.webp">
-												</picture>
-											</div>
-											<a href="#" class="news-block__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
-											<p class="news-block__text">
-												Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget pharetra massa.
-											</p>
-											<a href="#" class="news-block__btn button-small">Читать полностью</a>
-										</div>
-										<div data-fls-newsblock="" class="news-block">
-											<div class="news-block__img">
-												<picture>
-													<img alt="3" src="./assets/img/news/3.webp">
-												</picture>
-											</div>
-											<a href="#" class="news-block__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
-											<p class="news-block__text">
-												Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget pharetra massa.
-											</p>
-											<a href="#" class="news-block__btn button-small">Читать полностью</a>
-										</div>
-										<div data-fls-newsblock="" class="news-block">
-											<div class="news-block__img">
-												<picture>
-													<img alt="4" src="./assets/img/news/4.webp">
-												</picture>
-											</div>
-											<a href="#" class="news-block__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
-											<p class="news-block__text">
-												Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget pharetra massa.
-											</p>
-											<a href="#" class="news-block__btn button-small">Читать полностью</a>
-										</div>
-										<div data-fls-newsblock="" class="news-block">
-											<div class="news-block__img">
-												<picture>
-													<img alt="1" src="./assets/img/news/1.webp">
-												</picture>
-											</div>
-											<a href="#" class="news-block__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
-											<p class="news-block__text">
-												Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget pharetra massa.
-											</p>
-											<a href="#" class="news-block__btn button-small">Читать полностью</a>
-										</div>
-										<div data-fls-newsblock="" class="news-block">
-											<div class="news-block__img">
-												<picture>
-													<img alt="2" src="./assets/img/news/2.webp">
-												</picture>
-											</div>
-											<a href="#" class="news-block__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
-											<p class="news-block__text">
-												Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget pharetra massa.
-											</p>
-											<a href="#" class="news-block__btn button-small">Читать полностью</a>
-										</div>
-										<div data-fls-newsblock="" class="news-block">
-											<div class="news-block__img">
-												<picture>
-													<img alt="3" src="./assets/img/news/3.webp">
-												</picture>
-											</div>
-											<a href="#" class="news-block__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
-											<p class="news-block__text">
-												Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget pharetra massa.
-											</p>
-											<a href="#" class="news-block__btn button-small">Читать полностью</a>
-										</div>
-										<div data-fls-newsblock="" class="news-block">
-											<div class="news-block__img">
-												<picture>
-													<img alt="4" src="./assets/img/news/4.webp">
-												</picture>
-											</div>
-											<a href="#" class="news-block__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
-											<p class="news-block__text">
-												Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget pharetra massa.
-											</p>
-											<a href="#" class="news-block__btn button-small">Читать полностью</a>
-										</div>
+										<a href="#" class="news-block__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
+										<p class="news-block__text">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget pharetra massa.
+										</p>
+										<a href="#" class="news-block__btn button-small">Читать полностью</a>
 									</div>
-									<div data-fls-pagination="" class="pagination slider__pagination"></div>
-									<div class="slider__slider-buttons-wrapper">
-										<button data-fls-button="" type="button" class="arrow-button arrow-button--prev slider__slider-btn-prev --icon-arrow"></button>
-										<button data-fls-button="" type="button" class="arrow-button slider__slider-btn-next --icon-arrow"></button>
+									<div data-fls-newsblock="" class="news-block">
+										<div class="news-block__img">
+											<picture>
+												<img alt="2" src="./assets/img/news/2.webp">
+											</picture>
+										</div>
+										<a href="#" class="news-block__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
+										<p class="news-block__text">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget pharetra massa.
+										</p>
+										<a href="#" class="news-block__btn button-small">Читать полностью</a>
 									</div>
+									<div data-fls-newsblock="" class="news-block">
+										<div class="news-block__img">
+											<picture>
+												<img alt="3" src="./assets/img/news/3.webp">
+											</picture>
+										</div>
+										<a href="#" class="news-block__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
+										<p class="news-block__text">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget pharetra massa.
+										</p>
+										<a href="#" class="news-block__btn button-small">Читать полностью</a>
+									</div>
+									<div data-fls-newsblock="" class="news-block">
+										<div class="news-block__img">
+											<picture>
+												<img alt="4" src="./assets/img/news/4.webp">
+											</picture>
+										</div>
+										<a href="#" class="news-block__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
+										<p class="news-block__text">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget pharetra massa.
+										</p>
+										<a href="#" class="news-block__btn button-small">Читать полностью</a>
+									</div>
+									<div data-fls-newsblock="" class="news-block">
+										<div class="news-block__img">
+											<picture>
+												<img alt="1" src="./assets/img/news/1.webp">
+											</picture>
+										</div>
+										<a href="#" class="news-block__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
+										<p class="news-block__text">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget pharetra massa.
+										</p>
+										<a href="#" class="news-block__btn button-small">Читать полностью</a>
+									</div>
+									<div data-fls-newsblock="" class="news-block">
+										<div class="news-block__img">
+											<picture>
+												<img alt="2" src="./assets/img/news/2.webp">
+											</picture>
+										</div>
+										<a href="#" class="news-block__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
+										<p class="news-block__text">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget pharetra massa.
+										</p>
+										<a href="#" class="news-block__btn button-small">Читать полностью</a>
+									</div>
+									<div data-fls-newsblock="" class="news-block">
+										<div class="news-block__img">
+											<picture>
+												<img alt="3" src="./assets/img/news/3.webp">
+											</picture>
+										</div>
+										<a href="#" class="news-block__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
+										<p class="news-block__text">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget pharetra massa.
+										</p>
+										<a href="#" class="news-block__btn button-small">Читать полностью</a>
+									</div>
+									<div data-fls-newsblock="" class="news-block">
+										<div class="news-block__img">
+											<picture>
+												<img alt="4" src="./assets/img/news/4.webp">
+											</picture>
+										</div>
+										<a href="#" class="news-block__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
+										<p class="news-block__text">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget pharetra massa.
+										</p>
+										<a href="#" class="news-block__btn button-small">Читать полностью</a>
+									</div>
+								</div>
+								<div data-fls-pagination="" class="pagination slider__pagination"></div>
+								<div class="slider__slider-buttons-wrapper">
+									<button data-fls-button="" type="button" class="arrow-button arrow-button--prev slider__slider-btn-prev --icon-arrow"></button>
+									<button data-fls-button="" type="button" class="arrow-button slider__slider-btn-next --icon-arrow"></button>
 								</div>
 							</div>
 						</div>
