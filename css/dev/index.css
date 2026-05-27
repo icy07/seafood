@@ -159,7 +159,6 @@
   overflow: hidden;
   position: relative;
   display: flex;
-  align-items: flex-end;
 }
 .hero__main-slide img,
 .hero__main-slide picture {
@@ -383,7 +382,10 @@
     left: -1.375rem;
   }
 }
-@media (max-width: 78.125em) {
+@media (max-width: 75em) {
+  .hero__top {
+    flex-direction: column;
+  }
   .hero__slider-wrapper {
     padding: 0 0 1.25rem;
   }
@@ -398,11 +400,6 @@
   }
   .hero__pagination {
     margin: 2.75rem 0rem 0rem 0rem;
-  }
-}
-@media (max-width: 75em) {
-  .hero__top {
-    flex-direction: column;
   }
 }
 @media (max-width: 62.5em) {
@@ -485,7 +482,7 @@
     padding-top: 2.5rem;
   }
   .hero__main-slide {
-    padding-bottom: 9.25rem;
+    padding-bottom: 7.5rem;
   }
   .hero__main-slide {
     padding-left: 1.5rem;
@@ -506,10 +503,10 @@
     font-size: 1.75rem;
   }
   .hero__main-pagination {
-    bottom: 3.75rem;
+    bottom: 2.5rem;
   }
   .hero__main-buttons-wrapper {
-    bottom: 2.5rem;
+    bottom: 1.25rem;
   }
   .hero__main-buttons-wrapper {
     right: 1.5rem;
@@ -577,16 +574,16 @@
     font-size: clamp( 0.875rem , 0.84092844974375rem  +  0.1703577513vw , 1rem );
   }
   .hero {
-    margin-top: clamp( 1.25rem , 0.22785349233125rem  +  5.1107325383vw , 5rem );
+    margin-top: clamp( 1.25rem , 1.079642248725rem  +  0.8517887564vw , 1.875rem );
   }
   .hero__main-slide {
-    padding-top: clamp( 2.5rem , 1.8185689948875rem  +  3.4071550256vw , 5rem );
+    padding-top: clamp( 2.5rem , 2.15928449744375rem  +  1.7035775128vw , 3.75rem );
   }
   .hero__main-slide {
-    padding-left: clamp( 1.5rem , 0.54599659284375rem  +  4.7700170358vw , 5rem );
+    padding-left: clamp( 1.5rem , 0.8867120954rem  +  3.066439523vw , 3.75rem );
   }
   .hero__main-slide {
-    padding-right: clamp( 1.5rem , 0.54599659284375rem  +  4.7700170358vw , 5rem );
+    padding-right: clamp( 1.5rem , 0.8867120954rem  +  3.066439523vw , 3.75rem );
   }
   .hero__main-content p {
     font-size: clamp( 1rem , 0.89778534923125rem  +  0.5110732538vw , 1.375rem );
@@ -601,10 +598,10 @@
     font-size: clamp( 1.75rem , 1.40928449744375rem  +  1.7035775128vw , 3rem );
   }
   .hero__main-pagination {
-    bottom: clamp( 3.75rem , 3.40928449744375rem  +  1.7035775128vw , 5rem );
+    bottom: clamp( 2.5rem , 2.15928449744375rem  +  1.7035775128vw , 3.75rem );
   }
   .hero__main-buttons-wrapper {
-    bottom: clamp( 2.5rem , 2.15928449744375rem  +  1.7035775128vw , 3.75rem );
+    bottom: clamp( 1.25rem , 0.90928449744375rem  +  1.7035775128vw , 2.5rem );
   }
   .hero__bottom {
     gap: clamp( 0.75rem , 0.613713798975rem  +  0.6814310051vw , 1.25rem );
@@ -636,7 +633,7 @@
 }
 @media (min-width: 20em) and (max-width: 75em) {
   .hero__main-slide {
-    padding-bottom: clamp( 9.25rem , 8.75rem  +  2.5vw , 10.625rem );
+    padding-bottom: clamp( 7.5rem , 6.3636363636375rem  +  5.6818181818vw , 10.625rem );
   }
 }
 @media (min-width: 20em) and (max-width: 50em) {
@@ -665,7 +662,7 @@
 }
 @media (min-width: 75em) and (max-width: 91.875em) {
   .hero__main-slide {
-    padding-bottom: clamp( 7.75rem , 0.527777777775rem  +  9.6296296296vw , 9.375rem );
+    padding-bottom: clamp( 5.625rem , 2.847222222225rem  +  3.7037037037vw , 6.25rem );
   }
 }
 @media (min-width: 80em) and (max-width: 91.875em) {
@@ -678,7 +675,7 @@
 }
 @media (min-width: 91.875em) {
   .hero__main-slide {
-    padding-bottom: 9.375rem;
+    padding-bottom: 6.25rem;
   }
   .hero__main-pagination {
     left: 5rem;
@@ -731,16 +728,16 @@
     font-size: 1rem;
   }
   .hero {
-    margin-top: 5rem;
+    margin-top: 1.875rem;
   }
   .hero__main-slide {
-    padding-top: 5rem;
+    padding-top: 3.75rem;
   }
   .hero__main-slide {
-    padding-left: 5rem;
+    padding-left: 3.75rem;
   }
   .hero__main-slide {
-    padding-right: 5rem;
+    padding-right: 3.75rem;
   }
   .hero__main-content p {
     font-size: 1.375rem;
@@ -755,10 +752,10 @@
     font-size: 3rem;
   }
   .hero__main-pagination {
-    bottom: 5rem;
+    bottom: 3.75rem;
   }
   .hero__main-buttons-wrapper {
-    bottom: 3.75rem;
+    bottom: 2.5rem;
   }
   .hero__bottom {
     gap: 1.25rem;
