@@ -1249,10 +1249,13 @@ body::after {
   .slider--100 {
     margin-top: 2.5rem;
   }
+  .slider--80 {
+    margin-top: 1.25rem;
+  }
   .slider--60 {
     margin-top: 1.25rem;
   }
-  .slider--80 {
+  .slider--40 {
     margin-top: 1.25rem;
   }
   .slider__main {
@@ -1402,11 +1405,14 @@ body::after {
   .slider--100 {
     margin-top: clamp( 2.5rem , 1.47785349233125rem  +  5.1107325383vw , 6.25rem );
   }
+  .slider--80 {
+    margin-top: clamp( 1.25rem , 0.22785349233125rem  +  5.1107325383vw , 5rem );
+  }
   .slider--60 {
     margin-top: clamp( 1.25rem , 0.5685689948875rem  +  3.4071550256vw , 3.75rem );
   }
-  .slider--80 {
-    margin-top: clamp( 1.25rem , 0.22785349233125rem  +  5.1107325383vw , 5rem );
+  .slider--40 {
+    margin-top: clamp( 1.25rem , 0.90928449744375rem  +  1.7035775128vw , 2.5rem );
   }
   .slider__main {
     margin-top: clamp( 1.25rem , 0.90928449744375rem  +  1.7035775128vw , 2.5rem );
@@ -1613,11 +1619,14 @@ body::after {
   .slider--100 {
     margin-top: 6.25rem;
   }
+  .slider--80 {
+    margin-top: 5rem;
+  }
   .slider--60 {
     margin-top: 3.75rem;
   }
-  .slider--80 {
-    margin-top: 5rem;
+  .slider--40 {
+    margin-top: 2.5rem;
   }
   .slider__main {
     margin-top: 2.5rem;
